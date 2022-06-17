@@ -1,0 +1,7 @@
+{
+  "name": "findAssister",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
