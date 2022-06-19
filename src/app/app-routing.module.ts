@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'busca-servico',
+    loadChildren: () => import('./busca-servico/busca-servico.module').then( m => m.BuscaServicoPageModule)
+  },
+  {
+    path: 'presta-servico',
+    loadChildren: () => import('./presta-servico/presta-servico.module').then( m => m.PrestaServicoPageModule)
+  },
+  {
+    path: 'add-servico',
+    loadChildren: () => import('./add-servico/add-servico.module').then( m => m.AddServicoPageModule)
+  },
 ];
 
 @NgModule({

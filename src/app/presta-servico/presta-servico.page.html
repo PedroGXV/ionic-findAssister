@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Presta Serviço</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="tertiary" [routerLink]="['/add-servico']">Novo</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let servico of servicos">
+      <ion-label>{{ servico.servico }} - {{ servico.valor }}R$</ion-label>
+      <ion-button color="danger" (click)="removerServico(servico.id)">
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

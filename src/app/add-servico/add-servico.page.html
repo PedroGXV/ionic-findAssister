@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Adicionar Serviço</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input [(ngModel)]="nome" placeholder="Nome do serviço"></ion-input>
+  <ion-input [(ngModel)]="valor" type="number" placeholder="Valor"></ion-input>
+  <ion-input [(ngModel)]="prestador" placeholder="Nome do prestador"></ion-input>
+  <ion-button expand="block" (click)="adicionarFilme()">Adicionar</ion-button>
+</ion-content>
